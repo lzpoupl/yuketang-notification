@@ -3,4 +3,5 @@
 ### Credits
 
 <https://github.com/IOL0ol1/GetResponse> for getting XHR response
-<https://github.com/zly2006/yuketang-auto-answer> for 
+
+<https://github.com/zly2006/yuketang-auto-answer> for inspiration
