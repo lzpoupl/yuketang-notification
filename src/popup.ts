@@ -19,11 +19,11 @@ chrome.storage.local.get(["currentProblem", "currentAnswers"], (data) => {
       : `未找到问题，或不在答题页面`;
   }
 });
-document.getElementById("testSound")?.addEventListener("click", () => {
-  console.log("测试声音");
-  const audio = new Audio(chrome.runtime.getURL("ping.mp3"));
-  audio.play();
+
+document.getElementById("testSound")?.addEventListener("click", function() {
+  chrome.runtime.sendMessage({ type: "testNotification" });
 });
+
 const settingForm = document.forms.namedItem("settings");
 if (settingForm) {
   settingForm.addEventListener("submit", (e) => {
